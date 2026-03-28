@@ -25,7 +25,6 @@ jobs:
         run: npm ci
 
       - name: Build React app
-        working-directory: monitoreo-web-ui
         run: npm run build
         env:
           VITE_SERVER_URL: ${{ vars.VITE_SERVER_URL }}
