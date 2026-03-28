@@ -19,11 +19,13 @@ jobs:
         with:
           node-version: "20"
 
-      # 3. Install deps & build React app (inside monitoreo-web-ui)
+      # 3. Install deps & build React app
       - name: Install dependencies
+        working-directory: .
         run: npm ci
 
       - name: Build React app
+        working-directory: .
         run: npm run build
         env:
           VITE_SERVER_URL: ${{ vars.VITE_SERVER_URL }}
@@ -31,7 +33,7 @@ jobs:
           VITE_KC_REALM: ${{ vars.VITE_KC_REALM }}
           VITE_KC_CLIENT_ID: ${{ vars.VITE_KC_CLIENT_ID }}
 
-      # 4. Build Docker image (context: monitoreo-web-ui)
+      # 4. Build Docker image
       - name: Build Docker image
         run: |
           docker build -t leedmx/visor-viajes-ui:latest .
