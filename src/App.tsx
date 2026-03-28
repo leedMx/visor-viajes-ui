@@ -49,8 +49,8 @@ const i18nProvider = polyglotI18nProvider(() => spanishMessages, "es");
 export const App = ({ store }: { store: any }) => (
   <Admin
     layout={Layout}
-    theme={brandLightTheme}
-    darkTheme={brandDarkTheme}
+    // theme={brandLightTheme}
+    // darkTheme={brandDarkTheme}
     authProvider={authProvider}
     dataProvider={dataProvider}
     i18nProvider={i18nProvider}
