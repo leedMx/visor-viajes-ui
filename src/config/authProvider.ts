@@ -58,7 +58,7 @@ export const authProvider: AuthProvider = {
    * You can later parse keycloak.tokenParsed.realm_access.roles etc.
    */
   async getPermissions() {
-    return keycloak.tokenParsed?.resource_access?.["tracasa-ra"]?.roles ?? [];
+    return keycloak.tokenParsed?.resource_access?.["demo-ra"]?.roles ?? [];
   },
 
   /**
@@ -76,8 +76,7 @@ export const authProvider: AuthProvider = {
   },
 
   async canAccess({ action, resource }): Promise<boolean> {
-    return true;
-    const roles:string[] = keycloak.tokenParsed?.resource_access?.["tracasa-ra"]?.roles ?? [];
+    const roles:string[] = keycloak.tokenParsed?.resource_access?.["demo-ra"]?.roles ?? [];
     if (action == "list" || action == "show") action = "READ"
     if (action == "edit") action = "UPDATE";
     const roleName = `${resource}_${action}`.toUpperCase();
