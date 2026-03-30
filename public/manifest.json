@@ -1,6 +1,6 @@
 {
-    "short_name": "monitoreo-web-ui",
-    "name": "monitoreo",
+    "short_name": "visorviajes",
+    "name": "visor-viajes",
     "icons": [
         {
             "src": "favicon.ico",
