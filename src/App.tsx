@@ -42,19 +42,19 @@ import { ExpenseCreate } from "./expenses/ExpenseCreate";
 import { ExpenseShow } from "./expenses/ExpenseShow";
 import { ExpenseEdit } from "./expenses/ExpenseEdit";
 import 'leaflet/dist/leaflet.css';
-// import { Dashboard } from "./dashboard/FleetMapCard";
+import { Dashboard } from "./dashboard/Dashboard";
 
 const i18nProvider = polyglotI18nProvider(() => spanishMessages, "es");
 
 export const App = ({ store }: { store: any }) => (
   <Admin
     layout={Layout}
-    // theme={brandLightTheme}
-    // darkTheme={brandDarkTheme}
+    theme={brandLightTheme}
+    darkTheme={brandDarkTheme}
     authProvider={authProvider}
     dataProvider={dataProvider}
     i18nProvider={i18nProvider}
-    // dashboard={Dashboard}
+    dashboard={Dashboard}
     store={store}
   >
     <Resource

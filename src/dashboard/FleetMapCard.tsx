@@ -36,7 +36,7 @@ type FleetPoint = {
   record: VehicleStatusRecord;
 };
 
-export const Dashboard = () => {
+export const FleetMapCard = () => {
   const { data, isLoading, error } = useGetList<VehicleStatusRecord>(
     "vehicleStatus",
     {
