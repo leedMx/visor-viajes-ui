@@ -42,5 +42,10 @@
     "typescript-eslint": "^8.28.0",
     "vite": "^6.2.6"
   },
-  "name": "monitoreo-web-ui"
+  "overrides": {
+    "ra-ui-materialui": {
+      "lodash": "4.18.1"
+    }
+  },
+  "name": "visor-viajes-ui"
 }
