@@ -15,6 +15,7 @@ import L from "leaflet";
 import { Link, useGetList } from "react-admin";
 // import "../map/leafletSetup";
 import { Link as RouterLink } from 'react-router-dom';
+import { Title } from "@mui/icons-material";
 
 const mexicoCenter: [number, number] = [23.6345, -102.5528];
 
