@@ -13,7 +13,7 @@ import "leaflet/dist/leaflet.css";
 import { useEffect } from "react";
 import L from "leaflet";
 import { Link, useGetList } from "react-admin";
-// import "../map/leafletSetup";
+import "./leafletSetup";
 import { Link as RouterLink } from 'react-router-dom';
 import { Title } from "@mui/icons-material";
 

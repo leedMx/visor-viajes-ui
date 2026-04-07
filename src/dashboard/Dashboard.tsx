@@ -11,7 +11,7 @@ import LocalPoliceRoundedIcon from "@mui/icons-material/LocalPoliceRounded";
 
 import { DonutStatCard } from "./DonutStatCard";
 import { StatCard } from "./StatCard";
-import { FleetMapCard } from "./FleetMapCard";
+import { FleetMapCard } from "../map/FleetMapCard";
 import { DonutExtendedCard } from "./DonutExtendedCard";
 
 import { AttentionPanel, type AttentionItem } from "./AttentionPanel";

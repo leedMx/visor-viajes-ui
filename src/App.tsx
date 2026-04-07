@@ -41,7 +41,6 @@ import { ExpenseList } from "./expenses/ExpenseList";
 import { ExpenseCreate } from "./expenses/ExpenseCreate";
 import { ExpenseShow } from "./expenses/ExpenseShow";
 import { ExpenseEdit } from "./expenses/ExpenseEdit";
-import 'leaflet/dist/leaflet.css';
 import { Dashboard } from "./dashboard/Dashboard";
 
 const i18nProvider = polyglotI18nProvider(() => spanishMessages, "es");
